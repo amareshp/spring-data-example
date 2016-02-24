@@ -37,8 +37,8 @@ public class EsConfiguration {
                 .put("cluster.name", "os-metrics-elk").build();
         // on startup
         client =    new TransportClient(settings)
-                .addTransportAddress(new InetSocketTransportAddress("10.65.225.235", 9300))
-                .addTransportAddress(new InetSocketTransportAddress("10.65.96.202", 9300));
+                .addTransportAddress(new InetSocketTransportAddress("xx.xx.xx.xxx", 9300))
+                .addTransportAddress(new InetSocketTransportAddress("yy.yy.yy.yyy", 9300));
         return client;
     }
 
