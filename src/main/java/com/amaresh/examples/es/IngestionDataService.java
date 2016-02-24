@@ -42,7 +42,7 @@ public class IngestionDataService {
 
         StringQuery query = new StringQuery(id);
         System.out.println("Fetching Data with id " + id);
-        GetResponse response = client.prepareGet("osmetrics-2016-02-24", "data", id)
+        GetResponse response = client.prepareGet("my-index", "my-type", id)
                 .execute()
                 .actionGet();
         return response.getSourceAsString();
