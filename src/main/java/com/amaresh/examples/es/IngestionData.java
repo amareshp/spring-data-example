@@ -8,7 +8,7 @@ import javax.persistence.Id;
 /**
  * Created by apatta2 on 2/24/16.
  */
-@Document(indexName = "osmetrics-2016-02-24", type = "data")
+@Document(indexName = "my-index", type = "my-type")
 public class IngestionData {
 
     @Id
