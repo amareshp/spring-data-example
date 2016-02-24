@@ -22,10 +22,10 @@ public class OrderStgConfig {
     DataSource dataSource() throws SQLException {
 
         OracleDataSource dataSource = new OracleDataSource();
-        dataSource.setUser("stg_pg_ord");
-        dataSource.setPassword("stg_pg_ord");
+        dataSource.setUser("user");
+        dataSource.setPassword("pass");
         //points to staging db of dev environment.
-        dataSource.setURL("jdbc:oracle:thin:stg_pg_ord/stg_pg_ord@db-order-pg-oms.dev.pg-orders.services.qa.walmart.com:1521/stg_pg_ord.gecwalmart.com");
+        dataSource.setURL("jdbc:oracle:thin:user/pass@hostname.com:1521/service");
         dataSource.setImplicitCachingEnabled(true);
         dataSource.setFastConnectionFailoverEnabled(true);
         return dataSource;
