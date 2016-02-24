@@ -7,7 +7,7 @@ import java.util.Date;
  * Created by apatta2 on 2/23/16.
  */
 @Entity
-@Table(name = "LABS_ORDER_SERVICES_STG")
+@Table(name = "MY_TABLE_NAME")
 public class OrderStg {
 
     @Id
